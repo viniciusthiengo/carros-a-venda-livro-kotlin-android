@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Carros à venda</string>
+    <string name="car_description">Carro</string>
+    <string name="brand_car_description">Marca do carro</string>
+</resources>
