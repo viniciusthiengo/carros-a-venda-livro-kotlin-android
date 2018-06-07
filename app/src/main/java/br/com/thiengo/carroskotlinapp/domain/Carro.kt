@@ -3,7 +3,7 @@ package br.com.thiengo.carroskotlinapp.domain
 import android.graphics.Bitmap
 import android.os.Parcel
 import android.os.Parcelable
-import br.com.thiengo.carroskotlinapp.getPrecoHumam
+import br.com.thiengo.carroskotlinapp.getPrecoHuman
 
 
 class Carro(
@@ -19,7 +19,7 @@ class Carro(
         val aux = StringBuilder()
 
         for (acessorio in acessorios)
-            aux.append("${acessorio.nome} (${acessorio.preco.getPrecoHumam()}), ")
+            aux.append("${acessorio.nome} (${acessorio.preco.getPrecoHuman()}), ")
 
         return aux.trimEnd().trimEnd(',').toString()
     }

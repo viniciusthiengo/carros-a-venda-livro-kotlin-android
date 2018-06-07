@@ -7,7 +7,7 @@ import android.text.style.StyleSpan
 import java.util.*
 
 
-fun Float.getPrecoHumam()
+fun Float.getPrecoHuman()
         = String.format( Locale.GERMAN, "R$ %,.2f", this )
 //fun Float.getPrecoHumam() = String.format( "%.1f", this )
 

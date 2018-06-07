@@ -10,7 +10,7 @@ import android.widget.TextView
 import br.com.thiengo.carroskotlinapp.R
 import br.com.thiengo.carroskotlinapp.bold
 import br.com.thiengo.carroskotlinapp.domain.Carro
-import br.com.thiengo.carroskotlinapp.getPrecoHumam
+import br.com.thiengo.carroskotlinapp.getPrecoHuman
 
 
 class CarrosAdapter(
@@ -48,13 +48,13 @@ class CarrosAdapter(
         val tvPreco: TextView
 
         init {
-            ivImagem = itemView.findViewById(R.id.iv_imagem) as ImageView
-            ivLogo = itemView.findViewById(R.id.iv_logo) as ImageView
-            tvModelo = itemView.findViewById(R.id.tv_modelo) as TextView
-            tvMarca = itemView.findViewById(R.id.tv_marca) as TextView
-            tvMotor = itemView.findViewById(R.id.tv_motor) as TextView
-            tvAcessorios = itemView.findViewById(R.id.tv_acessorios) as TextView
-            tvPreco = itemView.findViewById(R.id.tv_preco) as TextView
+            ivImagem = itemView.findViewById(R.id.iv_imagem)
+            ivLogo = itemView.findViewById(R.id.iv_logo)
+            tvModelo = itemView.findViewById(R.id.tv_modelo)
+            tvMarca = itemView.findViewById(R.id.tv_marca)
+            tvMotor = itemView.findViewById(R.id.tv_motor)
+            tvAcessorios = itemView.findViewById(R.id.tv_acessorios)
+            tvPreco = itemView.findViewById(R.id.tv_preco)
         }
 
         fun setData(carro: Carro) {
@@ -64,7 +64,7 @@ class CarrosAdapter(
             tvMarca.text = String.format("%s - %d", carro.marca.nome, carro.ano)
             tvMotor.text = "Motor: ".bold().append( "${carro.motor.modelo} (${carro.motor.cilindros}) - ${carro.motor.marca}" )
             tvAcessorios.text = "Acessórios: ".bold().append( carro.getAcessoriosFormatted() )
-            tvPreco.text = carro.preco.getPrecoHumam()
+            tvPreco.text = carro.preco.getPrecoHuman()
         }
     }
 }

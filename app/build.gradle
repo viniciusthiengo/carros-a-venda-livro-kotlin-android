@@ -25,8 +25,8 @@ dependencies {
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:27.1.1'
 
-    // PARA O RecyclerView
-    implementation 'com.android.support:design:27.1.1'
+    // Para o RecyclerView
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
 }
 repositories {
     mavenCentral()
